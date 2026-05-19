@@ -1,0 +1,15 @@
+# Problem metadata
+name: One More Lane
+author: Markus Staael, Patrick Shen, Jakob Splidsboel Eg
+license: public domain
+
+# Limits
+limits:
+  time_multiplier: 5
+  time_safety_margin: 2
+
+# Validation
+validation: default
+
+# Type
+type: pass-fail

@@ -1,0 +1,19 @@
+\problemname{One More Lane}
+
+Congratulations on winning the election, Mr.\ Mayor! Now it is time to deliver on your campaign promise of faster car commutes!
+
+You are given a description of $n$ intersections and $m$ one-directional roads. Each road connects two intersections and has a capacity: the number of cars it can serve per hour. The number of cars that can travel from intersection $0$ to intersection $n-1$ per hour is determined by the maximum flow through this road network.
+
+As Mayor, you have the budget to upgrade exactly one road so that it can serve an unlimited number of cars per hour. Find the road to upgrade that results in the greatest increase in commuters from intersection $0$ to intersection $n-1$.
+
+If multiple roads yield the same increase, print the one with the smallest identifier.
+
+\section*{Input}
+
+The first line contains two integers $n$ and $m$, the number of intersections and roads respectively, where $2 \leq n \leq 5000$ and $1 \leq m \leq 20000$.
+
+The following $m$ lines each describe a road with three integers $u$, $v$, and $c$, where $0 \leq u, v \leq n-1$, $u \neq v$, and $c \geq 1$. This describes a one-directional road from intersection $u$ to intersection $v$ with a capacity of $c$ cars per hour. No two roads connect the same pair of intersections in the same direction.
+
+\section*{Output}
+
+Output a single line containing two integers $u$ and $v$, identifying the road to upgrade. The road must be the one that results in the greatest increase in maximum flow when upgraded to infinite capacity.
