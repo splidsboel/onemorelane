@@ -27,10 +27,10 @@ if len(parts) != 2:
 N = parse_int(parts[0], "N")
 M = parse_int(parts[1], "M")
 
-if not (2 <= N <= 5000):
-    fail(f"N={N} out of range [2, 5000]")
-if not (1 <= M <= 20000):
-    fail(f"M={M} out of range [1, 20000]")
+if not (2 <= N <= 500):
+    fail(f"N={N} out of range [2, 500]")
+if not (1 <= M <= 2000):
+    fail(f"M={M} out of range [1, 2000]")
 
 seen = set()
 for i in range(M):
